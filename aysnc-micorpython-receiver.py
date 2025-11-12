@@ -22,7 +22,7 @@ async def poll_udp(sock):
             # If no data is available, just ignore and continue polling
             pass
         
-        await asyncio.sleep(1)  # Sleep for 1 second before checking again
+        await asyncio.sleep(0.1)  # Sleep for 1 second before checking again
 
 async def main():
     udp_sock = create_udp_socket()
